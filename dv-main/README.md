@@ -1,11 +1,5 @@
 # Mining Dashboard: Mineral Extraction & Economic Development (2015–2024)
 
-**GROUP 3-TEAM MEMBERS** 
-- Marina Prokopets.
-- Ruqaiya Khan. 
-- Nokutenda Manombe.
-- Afzal Patel.
-
 ## OVERVIEW
 This project presents an interactive data visualization dashboard that explores the relationship between mineral extraction and economic development between 2015 and 2024.
 
@@ -92,12 +86,6 @@ A centralized state management approach is used, where selected filters are stor
 - Country-level aggregation may mask regional variations  
 - The map reflects total emissions and should be interpreted alongside other visualizations  
 
----
-
-##  TEAM CONTRIBUTION
-All group members contributed equally to their assigned sections as well as to the overall development of the project.
-
----
 
 ##  CONCLUSION
 This project demonstrates how interactive visualization can be used to explore complex relationships between economic development and environmental impact.  
