@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mining Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Mining Dashboard</h1>
+    <p>Mineral Extraction and Economic Development (2015–2024)</p>
+  </header>
+
+  <section class="controls">
+    <div class="control-group">
+      <label for="year-filter">Year</label>
+      <select id="year-filter">
+        <option value="all">All</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label for="mineral-filter">Mineral</label>
+      <select id="mineral-filter">
+        <option value="all">All</option>
+        <option value="bauxite-mining">Bauxite</option>
+        <option value="copper-mining">Copper</option>
+        <option value="iron-mining">Iron</option>
+      </select>
+    </div>
+
+    <div class="control-group control-button">
+      <button id="reset-btn">Reset</button>
+    </div>
+  </section>
+
+  <main class="dashboard-wrapper">
+    <section class="dashboard-top">
+      <section class="card">
+        <p class="card-subtitle">Distribution of Emissions Intensity</p>
+        <div id="histogram" class="chart-box"></div>
+      </section>
+
+      <section class="card">
+        <p class="card-subtitle">Average Emission Intensity by Mineral</p>
+        <div id="bar-chart" class="chart-box"></div>
+      </section>
+
+      <section class="card wide-card">
+        <p class="card-subtitle">
+          GDP per Capita vs Emissions with Pearson Correlation Coefficients
+        </p>
+        <div id="bubbleChart" class="chart-box"></div>
+      </section>
+    </section>
+
+    <section class="map-section">
+      <section class="card map-card">
+        <p class="card-subtitle">Global Mining Emissions by Country</p>
+        <svg id="map"></svg>
+      </section>
+    </section>
+  </main>
+
+  <div id="tooltip"></div>
+  <script src="./scripts/dashboard.js"></script>
+</body>
+</html>
